@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="assets/images/devchallenges.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <h1 class="title">Checkout Page</h1>
+        <div class="form-contact">
+          <h3 class="form-title">Contact information</h3>
+
+          <form>
+            <div class="input-container">
+              <label for="email">E-mail</label>
+              <span class="material-icons"> email </span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input"
+                placeholder="Enter your email..."
+                required
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="phone">Phone</label>
+              <span class="material-icons"> call </span>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="input"
+                placeholder="Enter your phone..."
+                required
+              />
+            </div>
+
+            <h3 class="form-title">Shipping address</h3>
+
+            <div class="input-container">
+              <label for="name">Full name</label>
+              <span class="material-icons"> account_circle </span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="input"
+                value="Rodney Cotton"
+                required
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="address">Address</label>
+              <span class="material-icons"> home </span>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                class="input"
+                placeholder="Your address..."
+                required
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="city">City</label>
+              <span class="material-icons"> apartment </span>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="input"
+                placeholder="Your city..."
+                required
+              />
+            </div>
+
+            <div class="location">
+              <div class="input-container">
+                <label for="country">Country</label>
+                <span class="material-icons"> public </span>
+                <span class="material-icons action-icon"> expand_more </span>
+                <select class="select" required>
+                  <option disabled selected>Your country...</option>
+                  <option value="France">France</option>
+                  <option value="Finland">Finland</option>
+                  <option value="England">England</option>
+                </select>
+              </div>
+
+              <div class="input-container">
+                <label for="zip">Postal code</label>
+                <span class="material-icons"> markunread_mailbox </span>
+                <input
+                  class="input input-zip"
+                  name="zip"
+                  type="number"
+                  placeholder="Your postal code..."
+                  maxlength="10"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="save-info">
+              <input type="checkbox" name="save" />
+              <label for="save">Save this information for next time</label>
+            </div>
+
+            <div class="btn-container">
+              <input class="btn-submit" type="submit" value="Continue" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- chart -->
+      <div class="chart-container">
+        <div class="chart-item">
+          <img src="assets/images/photo1.png" alt="item" />
+
+          <div class="item-info">
+            <h2>Vintage Backdog</h2>
+
+            <div class="price">
+              <p class="price-after">$54.99</p>
+              <p class="price-before">$94.99</p>
+            </div>
+
+            <div class="item-number-selector">
+              <span class="material-icons"> remove </span>
+              1
+              <span class="material-icons"> add </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-item">
+          <img src="assets/images/photo2.png" alt="item" />
+
+          <div class="item-info">
+            <h2>Levi Shoes</h2>
+
+            <div class="price">
+              <p class="price-after">$74.99</p>
+              <p class="price-before">$124.99</p>
+            </div>
+
+            <div class="item-number-selector">
+              <span class="material-icons"> remove </span>
+              1
+              <span class="material-icons"> add </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
